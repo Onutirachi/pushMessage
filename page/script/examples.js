@@ -65,7 +65,7 @@ const center = new PushMessage({
     anchor: "bottom",
     position: "center",
     customIcons: {
-        crown: "../example/icons/crown.png",
+        crown: "../page/icons/crown.png",
     },
 });
 

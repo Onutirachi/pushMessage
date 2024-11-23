@@ -52,7 +52,7 @@ body {
     width: 100%;
     height: max-content;
     box-sizing: border-box;
-    padding: 40px;
+    padding: min(2vh, 40px);
     color: var(--secondary-color);
 }
 
@@ -62,7 +62,7 @@ body {
 }
 
 .subsection {
-    width: min(90%, 900px);
+    width: min(100%, 900px);
     margin: auto;
 
     background: var(--highlight-color);
