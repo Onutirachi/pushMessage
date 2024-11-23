@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/c2cc4a3a-eaaf-482d-91b6-67ddd9eb67df" width="50%" height="50%">
+  <a href="https://onutirachi.github.io/pushMessage/"><img src="https://github.com/user-attachments/assets/c2cc4a3a-eaaf-482d-91b6-67ddd9eb67df" width="50%" height="50%"></a>
 </p>
 <br>
 
@@ -163,3 +163,7 @@ const message = new PushMessage({
     </tr>
   </tbody>
 </table>
+
+<h3>License</h3>
+<p>MIT License</p>
+<a href="https://www.buymeacoffee.com/carloslandini" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important; width: 217px !important" /></a>
