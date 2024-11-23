@@ -1,0 +1,38 @@
+//All possible custom parameters
+//See details in Customize >> Parameters
+
+const message = new PushMessage({
+    custom: {
+        title: false,
+        duration: 3000,
+        animationDuration: 500,
+        animationTimingFunction: "ease-out",
+        animation: "slideBottom",
+        animationOut: "slideBottom",
+        animationStay: false,
+        closeMode: "auto",
+        time: false,
+        timeColor: "#444444",
+        titleFont: "sans-serif",
+        titleWeight: "bold",
+        titleColor: "white",
+        titleAlign: "left",
+        titleSize: "18px",
+        messageFont: "sans-serif",
+        messageWeight: "normal",
+        messageColor: "white",
+        messageAlign: "left",
+        messageSize: "15px",
+        icon: false,
+        iconSize: "30px",
+        iconStyle: false,
+        background: "#777777",
+        border: false,
+        borderRadius: "10px",
+        width: "300px",
+        minWidth: false,
+        maxWidth: false,
+        boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.5)",
+        cursor: "auto",
+    },
+});

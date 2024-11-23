@@ -1,0 +1,168 @@
+:root {
+    --background-color: #1e1e1e;
+    --highlight-color: #333;
+    --complement-color: #111;
+    --secondary-color: #eaddc7;
+    --main-color: #c44900;
+}
+
+html,
+body {
+    all: unset;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    scroll-behavior: smooth();
+}
+
+.main {
+    width: 100%;
+    min-height: 100%;
+    height: max-content;
+    background: var(--background-color);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.header {
+    position: sticky;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    top: 0;
+    z-index: 2;
+}
+
+.logo {
+    position: relative;
+    height: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: logoScrolling 1ms linear forwards;
+    animation-timeline: scroll();
+    animation-range: 10px 200px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.section {
+    width: 100%;
+    height: max-content;
+    box-sizing: border-box;
+    padding: 40px;
+    color: var(--secondary-color);
+}
+
+.section > h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subsection {
+    width: min(90%, 900px);
+    margin: auto;
+
+    background: var(--highlight-color);
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.subsection:not(.subsection:last-child) {
+    margin-bottom: 40px;
+}
+
+.subsection > * {
+    margin: 0;
+}
+
+.subsection > h2 {
+    color: var(--main-color);
+}
+
+.subsection > *:not(:first-child) {
+    margin-top: 20px;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-gap: 10px;
+}
+
+.square {
+    aspect-ratio: 1/1;
+}
+
+.button {
+    background: var(--background-color);
+    border: none;
+    border-radius: 10px;
+    color: var(--secondary-color);
+    min-height: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 20px;
+    transition: all 0.2s ease-out;
+}
+
+.button:hover,
+.button-pressed {
+    background: var(--secondary-color);
+    color: var(--main-color);
+}
+
+* {
+    scroll-margin-top: 40px;
+}
+
+.code-box {
+    background: var(--complement-color);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    overflow: auto;
+}
+
+pre {
+    margin: 0;
+}
+
+.parameters-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+}
+
+.parameters {
+    box-sizing: border-box;
+    background: var(--complement-color);
+    border-radius: 10px;
+    padding: 20px;
+    transition: background 0.2s ease-out;
+}
+.parameters:hover {
+    background: var(--background-color);
+}
+
+.parameters > p {
+    margin: 0px;
+}
+
+.parameters h3 {
+    margin-top: 0px;
+    font-size: 22px;
+}
+.parameters h4 {
+    color: var(--main-color);
+    margin-bottom: 5px;
+}
+
+.menu-button {
+    width: 100%;
+}

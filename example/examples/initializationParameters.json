@@ -1,0 +1,36 @@
+{
+    "gap": {
+        "Description": "Gap between pushes in pixels",
+        "Default Value": "20",
+        "Valid Values": "Any positive integer"
+    },
+
+    "anchor": {
+        "Description": "Anchor to define where pushes will come from",
+        "Default Value": "bottom",
+        "Valid Values": "top, bottom"
+    },
+
+    "position": {
+        "Description": "Align your pushes relative to anchor",
+        "Default Value": "right",
+        "Valid Values": "left, center, right"
+    },
+
+    "elementToAppend": {
+        "Description": "DOM element where pushes will be appended, if nothing is defined, pushes will be appended on body",
+        "Default Value": "false",
+        "Valid Values": "Any valid DOM element"
+    },
+
+    "custom": {
+        "Description": "Customize default style properties and other attributes",
+        "Default Value": "{} *empty object",
+        "Valid Values": "Parameters specified in Customization section, if nothing is defined, default values will be used for all properties"
+    },
+    "customIcons": {
+        "Description": "Atibute a name to your icons path here, there is 5 default icons (info, success, warning, error, loading)",
+        "Default Value": "{} *empty object",
+        "Valid Values": "iconName: \"icon/path.png\","
+    }
+}

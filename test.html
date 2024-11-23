@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimento de Divs</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .movable {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            cursor: grab;
+        }
+        .movable.other {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="movable" id="div1" style="left: 50px; top: 50px;"></div>
+        <div class="movable other" id="div2" style="left: 200px; top: 200px;"></div>
+    </div>
+    <script>
+        const div1 = document.getElementById('div1');
+        const div2 = document.getElementById('div2');
+
+        let isDragging = false;
+        let offsetX, offsetY;
+
+        const checkCollision = (rect1, rect2) => {
+            return !(
+                rect1.right < rect2.left ||
+                rect1.left > rect2.right ||
+                rect1.bottom < rect2.top ||
+                rect1.top > rect2.bottom
+            );
+        };
+
+        const moveDiv = (div, x, y) => {
+            div.style.left = `${x}px`;
+            div.style.top = `${y}px`;
+        };
+
+        div1.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            offsetX = e.clientX - div1.offsetLeft;
+            offsetY = e.clientY - div1.offsetTop;
+            div1.style.cursor = "grabbing";
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+
+            const newX = e.clientX - offsetX;
+            const newY = e.clientY - offsetY;
+
+            moveDiv(div1, newX, newY);
+
+            const rect1 = div1.getBoundingClientRect();
+            const rect2 = div2.getBoundingClientRect();
+
+            if (checkCollision(rect1, rect2)) {
+                const offsetDiv2X = newX + rect1.width;
+                const offsetDiv2Y = newY + rect1.height;
+
+                moveDiv(div2, offsetDiv2X - rect2.width, offsetDiv2Y - rect2.height);
+            }
+        });
+
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+            div1.style.cursor = "grab";
+        });
+    </script>
+</body>
+</html>

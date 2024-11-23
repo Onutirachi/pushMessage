@@ -1,0 +1,22 @@
+{
+    "unique": {
+        "Description": "Define a push ID to prevent duplicated pushes",
+        "Default Value": false,
+        "Valid Values": "Any HTMLElement ID value"
+    },
+    "bodyStyle": {
+        "Description": "Style the body element of the push",
+        "Default Value": false,
+        "Valid Values": "Any valid CSS style value, it can break your pushes"
+    },
+    "onClick": {
+        "Description": "Function to run when push is clicked",
+        "Default Value": "()=>{} *empty arrow function",
+        "Valid Values": "Any function"
+    },
+    "onClose": {
+        "Description": "Function to run when push ends",
+        "Default Value": "()=>{} *empty arrow function",
+        "Valid Values": "Any function"
+    }
+}

@@ -1,0 +1,157 @@
+{
+    "title": {
+        "Description": "Title of the push message",
+        "Default Value": false,
+        "Valid Values": "Any string"
+    },
+    "duration": {
+        "Description": "Push message duration",
+        "Default Value": "3000",
+        "Valid Values": "Any positive integer"
+    },
+    "animationDuration": {
+        "Description": "Duration for in/out animation",
+        "Default Value": "500",
+        "Valid Values": "Any positive integer"
+    },
+    "animationTimingFunction": {
+        "Description": "Curve to in/out animation",
+        "Default Value": "ease-out",
+        "Valid Values": "Common CSS timing functions (e.g., ease, linear, ease-in-out)"
+    },
+    "animation": {
+        "Description": "Animation for push message to appear",
+        "Default Value": "slideBottom",
+        "Valid Values": "Any valid CSS animation keyframes"
+    },
+    "animationOut": {
+        "Description": "Animation for push message to disappear, uses same animation if not defined",
+        "Default Value": "slideBottom",
+        "Valid Values": "Any valid CSS animation keyframes"
+    },
+    "animationStay": {
+        "Description": "Animation for push message to run during its lifetime",
+        "Default Value": "false",
+        "Valid Values": "true, false"
+    },
+    "closeMode": {
+        "Description": "Changes how the push will be closed",
+        "Default Value": "auto",
+        "Valid Values": "auto, fixed, button, forced, custom"
+    },
+    "time": {
+        "Description": "Shows the time the push message appeared",
+        "Default Value": "false",
+        "Valid Values": "true, false"
+    },
+    "timeColor": {
+        "Description": "Color for time text",
+        "Default Value": "#444444",
+        "Valid Values": "Any valid CSS color value"
+    },
+    "titleFont": {
+        "Description": "Font for title text",
+        "Default Value": "sans-serif",
+        "Valid Values": "Any valid CSS font-family"
+    },
+    "titleWeight": {
+        "Description": "Weight for title text",
+        "Default Value": "bold",
+        "Valid Values": "Common font weights (e.g., normal, bold, 100-900)"
+    },
+    "titleColor": {
+        "Description": "Color for title text",
+        "Default Value": "white",
+        "Valid Values": "Any valid CSS color value"
+    },
+    "titleAlign": {
+        "Description": "Alignment for title text",
+        "Default Value": "left",
+        "Valid Values": "left, center, right"
+    },
+    "titleSize": {
+        "Description": "Size for title text",
+        "Default Value": "18px",
+        "Valid Values": "Any valid CSS size value"
+    },
+    "messageFont": {
+        "Description": "Font for message text",
+        "Default Value": "sans-serif",
+        "Valid Values": "Any valid CSS font-family"
+    },
+    "messageWeight": {
+        "Description": "Weight for message text",
+        "Default Value": "normal",
+        "Valid Values": "Common font weights (e.g., normal, bold, 100-900)"
+    },
+    "messageColor": {
+        "Description": "Color for message text",
+        "Default Value": "white",
+        "Valid Values": "Any valid CSS color value"
+    },
+    "messageAlign": {
+        "Description": "Alignment for message text",
+        "Default Value": "left",
+        "Valid Values": "left, center, right"
+    },
+    "messageSize": {
+        "Description": "Size for message text",
+        "Default Value": "15px",
+        "Valid Values": "Any valid CSS size value"
+    },
+    "icon": {
+        "Description": "Icon for push message",
+        "Default Value": "false",
+        "Valid Values": "Any valid path or icon name defined on custom icon"
+    },
+    "iconSize": {
+        "Description": "Size for icon, keeping square proportion (1:1)",
+        "Default Value": "30px",
+        "Valid Values": "Any valid CSS size value"
+    },
+    "iconStyle": {
+        "Description": "Adjust icon CSS (e.g., background-position, width, height, border, etc.)",
+        "Default Value": "false",
+        "Valid Values": "Any valid CSS style, based on background property"
+    },
+    "background": {
+        "Description": "Background for push message",
+        "Default Value": "#777777",
+        "Valid Values": "Any valid CSS background value"
+    },
+    "border": {
+        "Description": "Border for push message",
+        "Default Value": "false",
+        "Valid Values": "Any valid CSS border value"
+    },
+    "borderRadius": {
+        "Description": "Border radius for push message",
+        "Default Value": "10px",
+        "Valid Values": "Any valid CSS border radius value"
+    },
+    "width": {
+        "Description": "Width for push message",
+        "Default Value": "300px",
+        "Valid Values": "Any valid CSS size value"
+    },
+    "minWidth": {
+        "Description": "Minimum width for push message",
+        "Default Value": "false",
+        "Valid Values": "Any valid CSS size value"
+    },
+    "maxWidth": {
+        "Description": "Maximum width for push message",
+        "Default Value": "false",
+        "Valid Values": "Any valid CSS size value"
+    },
+    "boxShadow": {
+        "Description": "Box shadow for push message",
+        "Default Value": "0px 2px 4px rgba(0, 0, 0, 0.5)",
+        "Valid Values": "Any valid CSS box-shadow value"
+    },
+    "cursor": {
+        "Description": "Change cursor when push is hovered",
+        "Default Value": "auto",
+        "Valid Values": "Any Valid CSS cursor value"
+    }
+}

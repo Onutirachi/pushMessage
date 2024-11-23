@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <meta name="description" content="pushMessage is a Javascript library to create on-screen notifications on web aplications and websites" />
+        <meta name="keywords" content="Library, Javascript, pushMessage, Notifications, Messages" />
+        <meta name="author" content="Carlos Landini" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/stackoverflow-dark.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+        <script src="../src/pushMessage.js" defer></script>
+        <script src="script/scroller.js" defer></script>
+        <script src="script/examples.js" defer></script>
+        <script src="script/charactersQuotes.js" defer></script>
+        <script src="script/script.js" defer></script>
+        <script src="script/menu.js" defer></script>
+        <link rel="stylesheet" href="style/style.css" />
+        <link rel="stylesheet" href="style/scrollbar.css" />
+        <link rel="stylesheet" href="style/keyframes.css" />
+        <title>pushMessage</title>
+    </head>
+    <body>
+        <div class="main">
+            <div class="header"><img class="logo" src="images/pushMessage.svg" alt="" onClick="openMenu()" /></div>
+
+            <div class="section" id="about">
+                <h1>About</h1>
+                <div class="subsection">
+                    <h2>pushMessage</h2>
+                    <p><strong>pushMessage</strong> is a JavaScript library designed to create on-screen notifications for web applications and websites. It supports both simple and advanced use cases, making it easy to create all kinds of notifications.</p>
+
+                    <h2>Customization</h2>
+                    <p>Fully customize your notifications by adjusting size, background, title, text, icons, images, and more. With <strong>pushMessage</strong>, the possibilities are endless! Display information, errors, successes, warnings, loading indicators, texts, images, and more.</p>
+
+                    <h2>Features</h2>
+                    <ul>
+                        <li>Send dynamic push notifications.</li>
+                        <li>Display the notification time on each push.</li>
+                        <li>Configure behavior: persistent notifications, user-closed only, and more.</li>
+                        <li>Create notifications that follow the mouse cursor on hover.</li>
+                        <li>Fully customizable.</li>
+                        <li>Written entirely in JavaScript with no external libraries or frameworks required.</li>
+                        <li>Lightweight and efficient.</li>
+                        <li>Well-documented and easy to use.</li>
+                        <li>Compatible with all major desktop browsers.</li>
+                        <li>Fully supported on all major mobile browsers.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section" id="examples">
+                <h1>Examples</h1>
+                <div class="subsection">
+                    <h2>Testing pushMessage</h2>
+                    <p>Use this buttons to see what pushButtons can do</p>
+                    <div class="button-container">
+                        <button class="button square" onclick="helloWorld()">Hello World</button>
+                        <button class="button square" onclick="apiResponseExample()">API Response</button>
+                        <button class="button square" onclick="customTextExamples()">Custom Text</button>
+                        <button class="button square" onclick="pushCounterExample()">Push Counter</button>
+                        <button class="button square" onclick="imageExample()">Image</button>
+                        <button class="button square" onclick="promise().swap()">Promise swap</button>
+                        <button class="button square" id="hover-here">Hover Here</button>
+                        <button class="button square" onclick="goldenPush()">Golden Push</button>
+                        <button class="button square" onclick="weirdPush()">Weird Push</button>
+                        <button class="button square" onclick="shrek()">Shrek</button>
+                        <button class="button square" onclick="getChuckNorrisJoke()">Chuck Norris</button>
+                        <button class="button square" onclick="showQuotes(event)">Show Quotes</button>
+                    </div>
+                    <p>Explore example.js script where all example functions are</p>
+                    <p>Tip: Click on pushMessage logo to navigate</p>
+                </div>
+            </div>
+
+            <div class="scroller" id="scroller-1">
+                <div class="section">
+                    <h1 id="getting-started">Getting Started</h1>
+                    <div class="subsection" id="import-script">
+                        <h2>Import script</h2>
+                        <p>Import pushMessage on your page</p>
+                        <div class="code-box" language="html" file="examples/importScript.txt"></div>
+                    </div>
+                    <div class="subsection" id="basic-usage">
+                        <h2>Basic Usage</h2>
+                        <p>Create pushMessage instance to use push method</p>
+                        <div class="code-box" language="javascript" file="examples/basicUsage.js"></div>
+                    </div>
+                    <div class="subsection" id="complementations">
+                        <h2>Complementations</h2>
+                        <p>Set title and icon to your push like this</p>
+                        <div class="code-box" language="javascript" file="examples/complementations.js"></div>
+                    </div>
+                    <div class="subsection" id="initialization">
+                        <h2>Initialization</h2>
+                        <p>You can set initial settings for yout pushMessage instance</p>
+                        <div class="code-box" language="javascript" file="examples/initialization.js"></div>
+                        <br />
+                        <h3>Parameters</h3>
+                        <p>Any of this parameters is valid inside PushMessage({ }) object</p>
+                        <div class="parameters-container" file="examples/InitializationParameters.json"></div>
+                    </div>
+                </div>
+
+                <div class="section" id="methods-and-properties">
+                    <h1>Methods And Properties</h1>
+                    <div class="subsection" id="push-method">
+                        <h2>push() Method</h2>
+                        <p>Used to create and manipulate pushes</p>
+                        <div class="code-box" language="javascript" file="examples/pushMethod.js"></div>
+                    </div>
+                    <div class="subsection" id="hover-method">
+                        <h2>hover() Method</h2>
+                        <p>Used to create push that follows cursor when hover an element</p>
+                        <div class="code-box" language="javascript" file="examples/hoverMethod.js"></div>
+                    </div>
+                    <div class="subsection" id="customtext-method">
+                        <h2>customText() Method</h2>
+                        <p>Used to create custom texts inside push message or push title</p>
+                        <div class="code-box" language="javascript" file="examples/customTextMethod.js"></div>
+                    </div>
+                    <div class="subsection" id="image-method">
+                        <h2>image() Method</h2>
+                        <p>Used to create images inside push message</p>
+                        <div class="code-box" language="javascript" file="examples/imageMethod.js"></div>
+                    </div>
+                    <div class="subsection" id="pushcounter-property">
+                        <h2>pushCounter Property</h2>
+                        <p>Counts pushMessage per instance</p>
+                        <div class="code-box" language="javascript" file="examples/pushCounterProperty.js"></div>
+                    </div>
+                    <div class="subsection" id="globalpushcounter-static">
+                        <h2>globalPushCounter Static</h2>
+                        <p>Counts pushMessage of all instances instance</p>
+                        <div class="code-box" language="javascript" file="examples/globalPushCounterStatic.js"></div>
+                    </div>
+                </div>
+
+                <div class="section" id="customization">
+                    <h1>Customization</h1>
+                    <div class="subsection" id="default-customization">
+                        <h2>Default customization</h2>
+                        <p>Customize the default look of your pushes</p>
+                        <div class="code-box" language="javascript" file="examples/defaultCustomization.js"></div>
+                        <br />
+                        <h3>Fully Customized</h3>
+                        <p>Here is a fully customized pushMessage instance</p>
+                        <div class="code-box" language="javascript" file="examples/fullyCustomized.js"></div>
+                    </div>
+                    <div class="subsection" id="individual-customization">
+                        <h2>Individual Customization</h2>
+                        <p>You can also fully customize a single push</p>
+                        <div class="code-box" language="javascript" file="examples/individualCustomization.js"></div>
+                    </div>
+                    <div class="subsection" id="text-customization">
+                        <h2>Text Customization</h2>
+                        <p>Customize text using .customText method</p>
+                        <div class="code-box" language="javascript" file="examples/textCustomization.js"></div>
+                    </div>
+                    <div class="subsection" id="customization-parameters">
+                        <h2>Customization Parameters</h2>
+                        <p>Details about all valid customization parameters</p>
+                        <div class="parameters-container" file="examples/customizationParameters.json"></div>
+                    </div>
+                    <div class="subsection" id="close-mode">
+                        <h2>Close Mode</h2>
+                        <p>All closeMode parameter valid values</p>
+                        <h3>auto</h3>
+                        <p style="margin-top: 0">Push will close itself if clicked or if duration time ends</p>
+                        <h3>fixed</h3>
+                        <p style="margin-top: 0">Push will last until user click on it</p>
+                        <h3>button</h3>
+                        <p style="margin-top: 0">Push will last until user click on close button, usefull when you want user to click in something or select some text inside push</p>
+                        <h3>forced</h3>
+                        <p style="margin-top: 0">Push will close itself when duration time ends, push cannot be closed by user</p>
+                        <h3>swap</h3>
+                        <p style="margin-top: 0">Push will close after a new push take his place, good for async responses like promises</p>
+                        <h3>swapFixed</h3>
+                        <p style="margin-top: 0">Like swap, but push will be treat as fixed, and apear under all pushes on screen</p>
+                        <h3>custom</h3>
+                        <p style="margin-top: 0">Disable all previous close methods and will close only if some element inside push with property pushClose is clicked</p>
+                        <br />
+                        <h3>closeMode: "swap" Example</h3>
+                        <div class="code-box" language="javascript" file="examples/closeModeSwapExample.js"></div>
+                        <h3>closeMode: "custom" Example</h3>
+                        <div class="code-box" language="javascript" file="examples/closeModeCustomExample.js"></div>
+                    </div>
+                </div>
+
+                <div class="section" id="advanced-usage">
+                    <h1>Advanced Usage</h1>
+                    <div class="subsection" id="advanced-complementations">
+                        <h2>Advanced Complementations</h2>
+                        <p>More complementation options to change push behavior</p>
+                        <div class="code-box" language="javascript" file="examples/advancedComplementations.js"></div>
+                        <br />
+                        <h3>Parameters</h3>
+                        <p>Any of this parameters is valid inside .show method</p>
+                        <div class="parameters-container" file="examples/advancedComplementationsParameters.json"></div>
+                    </div>
+                    <div class="subsection" id="push-functions">
+                        <h2>Push Functions</h2>
+                        <p>You can trigger functions when push is clicked or when push is over</p>
+                        <div class="code-box" language="javascript" file="examples/pushFunctions.js"></div>
+                    </div>
+                    <div class="subsection" id="bodystyle-example">
+                        <h2>bodyStyle Example</h2>
+                        <p>Customize message body and use template literals to write some HTML inside pushes</p>
+                        <div class="code-box" language="javascript" file="examples/bodyStyleExample.js"></div>
+                    </div>
+                    <div class="subsection" id="using-images-simplified">
+                        <h2>Using Images Simplified</h2>
+                        <p>use .image method to insert images on your push message, use bodyStile to align elements</p>
+                        <div class="code-box" language="javascript" file="examples/usingImagesSimplified.js"></div>
+                    </div>
+                    <div class="subsection" id="appendchild-example">
+                        <h2>appendChild Example</h2>
+                        <p>Append HTML elements to push body by capturing push on a variable</p>
+                        <div class="code-box" language="javascript" file="examples/appendChildExample.js"></div>
+                    </div>
+                    <div class="subsection" id="push-root-css-example">
+                        <h2>Push Root CSS Example</h2>
+                        <p>Change CSS of the root of the push after capturing push on a variable</p>
+                        <div class="code-box" language="javascript" file="examples/pushRootCSSExample.js"></div>
+                    </div>
+                </div>
+
+                <div class="section" id="full-examples">
+                    <h1>Full Examples</h1>
+                    <div class="subsection" id="full-instance-example">
+                        <h2>Full Instance Example</h2>
+                        <p>A instance with all parameters with default values</p>
+                        <div class="code-box" language="javascript" file="examples/fullInstanceExample.js"></div>
+                    </div>
+                    <div class="subsection" id="full-push-example">
+                        <h2>Full Push Example</h2>
+                        <p>A push message with all parameters with default values</p>
+                        <div class="code-box" language="javascript" file="examples/fullPushExample.js"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>pushMessage</title>
+        <!-- Simple import JS Script here -->
+        <!-- Use defer to load it after page load -->
+        <script src="pushMessage.js" defer></script>
+        <!-- Import pushMessage before use it in other scripts -->
+        <script src="OtherScript.js" defer></script>
+    </head>
+    <body>
+        <!-- Your stuff here -->
+    </body>
+</html>
