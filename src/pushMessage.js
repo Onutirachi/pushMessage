@@ -458,7 +458,7 @@ class PushMessage {
         push.style.animation = `${push.custom.animationOut} ${push.custom.animationDuration}ms ${push.custom.animationTimingFunction} reverse forwards`;
         clearTimeout(push.timeOut);
         push.timeOut = setTimeout(() => {
-            if (!push.hover) {
+            if (!push.custom.hover) {
                 push.custom.onClose();
                 const targetArray = this.#getTargetArray(push);
                 if (!push.swapped) {
