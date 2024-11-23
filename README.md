@@ -166,4 +166,5 @@ const message = new PushMessage({
 
 <h3>License</h3>
 <p>MIT License</p>
+<br>
 <a href="https://www.buymeacoffee.com/carloslandini" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important; width: 217px !important" /></a>
