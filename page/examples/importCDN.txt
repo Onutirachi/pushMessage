@@ -1,0 +1,5 @@
+<!-- Import the script at the end of the body -->
+<script src="https://cdn.jsdelivr.net/gh/Onutirachi/pushMessage@main/src/pushMessage.js"></script>
+
+<!-- Or, load the script in the head with defer -->
+<script src="https://cdn.jsdelivr.net/gh/Onutirachi/pushMessage@main/src/pushMessage.js" defer></script>

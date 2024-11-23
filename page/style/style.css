@@ -129,8 +129,27 @@ body {
     overflow: auto;
 }
 
+.about-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+p,
+li {
+    line-height: 130%;
+}
+
 pre {
     margin: 0;
+}
+
+code:not(pre code) {
+    background-color: var(--background-color);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    color: var(--secondary-color);
 }
 
 .parameters-container {
