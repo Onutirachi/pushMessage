@@ -1,23 +1,23 @@
 const icons = {
-    Bender: "icons/bender.png",
-    Fry: "icons/fry.png",
-    Zoidberg: "icons/zoidberg.png",
+    Bender: "page/icons/bender.png",
+    Fry: "page/icons/fry.png",
+    Zoidberg: "page/icons/zoidberg.png",
 
-    Rick: "icons/rick.png",
-    Morty: "icons/morty.png",
-    "Mr Poopybutthole": "icons/mrpoopybutthole.png",
+    Rick: "page/icons/rick.png",
+    Morty: "page/icons/morty.png",
+    "Mr Poopybutthole": "page/icons/mrpoopybutthole.png",
 
-    Finn: "icons/finn.png",
-    Jake: "icons/jake.png",
-    "Ice King": "icons/iceking.png",
+    Finn: "page/icons/finn.png",
+    Jake: "page/icons/jake.png",
+    "Ice King": "page/icons/iceking.png",
 
-    Homer: "icons/homer.png",
-    Ned: "icons/ned.png",
-    Nelson: "icons/nelson.png",
+    Homer: "page/icons/homer.png",
+    Ned: "page/icons/ned.png",
+    Nelson: "page/icons/nelson.png",
 
-    Grim: "icons/grim.png",
-    Billy: "icons/billy.png",
-    Mandy: "icons/mandy.png",
+    Grim: "page/icons/grim.png",
+    Billy: "page/icons/billy.png",
+    Mandy: "page/icons/mandy.png",
 };
 
 const quotes = new PushMessage({
