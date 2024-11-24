@@ -39,7 +39,7 @@ const message = new PushMessage({
 
     //If you want to add custom icons, define them here, it make easier to use icons by using key on icon src
     customIcons: {
-        example: "icons/example.png", //Valid object key and path to icon, you can use path directly on push icon src as well
+        example: "../page/icons/example.png", //Valid object key and path to icon, you can use path directly on push icon src as well
         //You can use Base64 here too
         //exampleBase64: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaX5RAAAAAXNSR0IArs4c6Q......",
 
@@ -165,7 +165,7 @@ function pushCounterExample() {
 function imageExample() {
     message.push(
         message.image(
-            "icons/mortysticker.png",
+            "../page/icons/mortysticker.png",
             `
                 width: 100%; 
                 height: 100%;
@@ -193,10 +193,10 @@ function imageExample() {
     message.push(
         `You can use custom CSS on your message body 
         <div style="display: flex; gap: 10px; align-itens: center; justify-content: center;">
-            ${message.image("icons/fry.png", css)}
-            ${message.image("icons/bender.png", css)}
-            ${message.image("icons/rick.png", css)}
-            <img src="icons/morty.png" style="${css}"/> ${/*Example Without function, if you like that way*/ ""}
+            ${message.image("../page/icons/fry.png", css)}
+            ${message.image("../page/icons/bender.png", css)}
+            ${message.image("../page/icons/rick.png", css)}
+            <img src="../page/icons/morty.png" style="${css}"/> ${/*Example Without function, if you like that way*/ ""}
         </div>
         `,
         {
